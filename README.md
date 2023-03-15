@@ -38,8 +38,8 @@ The directory structure is:
 
 ### Models
 
-- Download the pre-trained backbones from [here](https://drive.google.com/file/d/1l1JG8AsxFAOUoY66YGK1lbXxutsVOcfg/view?usp=sharing) and put them into the `initmodel` directory.
-- Download [exp.zip](https://drive.google.com/file/d/1e5cY6snOqlaQFJ5eW8Sg1AN-YnvJrE7h/view?usp=sharing) and compress it to obtain all pretrained models for PASCAL-5<sup>i</sup> and COCO-20<sup>i</sup>.
+- Download the pre-trained backbones from [here](https://drive.google.com/file/d/1M0pUB1ghGI4GgwmMbLaGRFyHl4WOB0iE/view?usp=sharing) and put them into the `initmodel` directory.
+- Download [exp.zip](https://drive.google.com/file/d/1qMn7s0GL6ljVVRlHnRxHWd4pou2hVvJ9/view?usp=sharing) and compress it to obtain all pretrained models for PASCAL-5<sup>i</sup> and COCO-20<sup>i</sup>.
 
 ### Usage
 
