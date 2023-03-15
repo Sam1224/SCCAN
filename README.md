@@ -52,7 +52,7 @@ The directory structure is:
   ```
   - *5-shot*
   ```
-  CUDA_VISIBLE_DEVICES=0,1,2,3 python train_sccan.py --config=config/{pascal,coco}/{pascal,coco}_split{0,1,2,3}_resnet{50,101}_5s.yaml
+  CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 train_sccan.py --config=config/{pascal,coco}/{pascal,coco}_split{0,1,2,3}_resnet{50,101}_5s.yaml
   ```
 
 - **Meta-testing**
