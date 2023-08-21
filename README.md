@@ -1,5 +1,9 @@
 # Self-Calibrated Cross Attention Network for Few-Shot Segmentation
 
+This repository contains the code for our ICCV 2023 [paper](https://arxiv.org/abs/2308.09294) "*Self-Calibrated Cross Attention Network for Few-Shot Segmentation*".
+
+> **Abstract**: *The key to the success of few-shot segmentation (FSS) lies in how to effectively utilize support samples. Most solutions compress support foreground (FG) features into prototypes, but lose some spatial details. Instead, others use cross attention to fuse query features with uncompressed support FG. Query FG could be fused with support FG, however, query background (BG) cannot find matched BG features in support FG, yet inevitably integrates dissimilar features. Besides, as both query FG and BG are combined with support FG, they get entangled, thereby leading to ineffective segmentation. To cope with these issues, we design a self-calibrated cross attention (SCCA) block. For efficient patch-based attention, query and support features are firstly split into patches. Then, we design a patch alignment module to align each query patch with its most similar support patch for better cross attention. Specifically, SCCA takes a query patch as Q, and groups the patches from the same query image and the aligned patches from the support image as K&V. In this way, the query BG features are fused with matched BG features (from query patches), and thus the aforementioned issues will be mitigated. Moreover, when calculating SCCA, we design a scaled-cosine mechanism to better utilize the support features for similarity calculation. Extensive experiments conducted on PASCAL-5<sup>i</sup> and COCO-20<sup>i</sup> demonstrate the superiority of our model, e.g., the mIoU score under 5-shot setting on COCO-20<sup>i</sup> is 5.6%+ better than previous state-of-the-arts.* 
+
 <p align="middle">
   <img src="figure/overview.png">
 </p>
@@ -90,3 +94,16 @@ Performance comparison with the state-of-the-arts.
 ### References
 
 This repo is mainly built based on [BAM](https://github.com/chunbolang/BAM). Thanks for their great work!
+
+## BibTeX
+
+If you find our work and this repository useful. Please consider giving a star :star: and citation &#x1F4DA;.
+
+```bibtex
+@article{xu2023selfcalibrated,
+  title={Self-Calibrated Cross Attention Network for Few-Shot Segmentation},
+  author={Xu, Qianxiong and Zhao, Wenting and Lin, Guosheng and Long, Cheng},
+  journal={arXiv preprint arXiv:2308.09294},
+  year={2023}
+}
+```
