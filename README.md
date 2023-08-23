@@ -100,7 +100,7 @@ This repo is mainly built based on [BAM](https://github.com/chunbolang/BAM). Tha
 If you find our work and this repository useful. Please consider giving a star :star: and citation &#x1F4DA;.
 
 ```bibtex
-@article{xu2023selfcalibrated,
+@article{xu2023self,
   title={Self-Calibrated Cross Attention Network for Few-Shot Segmentation},
   author={Xu, Qianxiong and Zhao, Wenting and Lin, Guosheng and Long, Cheng},
   journal={arXiv preprint arXiv:2308.09294},
