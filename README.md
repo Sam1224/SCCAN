@@ -50,13 +50,13 @@ The directory structure is:
 - Change configuration via the `.yaml` files in `config`, then run the following commands for training and testing.
 
 - **Meta-training**
-  - *1-shot*
+  - *1/5-shot* for PASCAL-5<sup>i</sup>
   ```
-  CUDA_VISIBLE_DEVICES=0 python train_sccan.py --config=config/{pascal,coco}/{pascal,coco}_split{0,1,2,3}_resnet{50,101}.yaml
+  CUDA_VISIBLE_DEVICES=0 python train_sccan.py --config=config/pascal/pascal_split{0,1,2,3}_resnet{50,101}{_5s}.yaml
   ```
-  - *5-shot*
+  - *1/5-shot* for COCO-20<sup>i</sup>
   ```
-  CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 train_sccan.py --config=config/{pascal,coco}/{pascal,coco}_split{0,1,2,3}_resnet{50,101}_5s.yaml
+  CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 train_sccan.py --config=config/coco/coco_split{0,1,2,3}_resnet{50,101}{_5s}.yaml
   ```
 
 - **Meta-testing**
