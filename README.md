@@ -100,10 +100,12 @@ This repo is mainly built based on [BAM](https://github.com/chunbolang/BAM). Tha
 If you find our work and this repository useful. Please consider giving a star :star: and citation &#x1F4DA;.
 
 ```bibtex
-@article{xu2023self,
-  title={Self-Calibrated Cross Attention Network for Few-Shot Segmentation},
-  author={Xu, Qianxiong and Zhao, Wenting and Lin, Guosheng and Long, Cheng},
-  journal={arXiv preprint arXiv:2308.09294},
-  year={2023}
+@InProceedings{Xu_2023_ICCV,
+    author    = {Xu, Qianxiong and Zhao, Wenting and Lin, Guosheng and Long, Cheng},
+    title     = {Self-Calibrated Cross Attention Network for Few-Shot Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {655-665}
 }
 ```
